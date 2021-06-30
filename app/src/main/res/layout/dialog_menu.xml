@@ -21,12 +21,13 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/iv_lo_opt"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/logout" />
 
@@ -39,7 +40,7 @@
             android:fontFamily="@font/proxim_nova"
             android:text="Log Out"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
@@ -49,15 +50,14 @@
         android:layout_height="40dp"
         android:layout_below="@id/rl_log_out"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/iv_da_opt"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/delete_acc" />
 
@@ -70,7 +70,7 @@
             android:fontFamily="@font/proxim_nova"
             android:text="Delete Account"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </RelativeLayout>
 

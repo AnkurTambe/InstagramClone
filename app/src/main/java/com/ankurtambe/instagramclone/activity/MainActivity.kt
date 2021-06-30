@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.ankurtambe.instagramclone.R
 import com.ankurtambe.instagramclone.fragment.*
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
 
@@ -64,14 +65,18 @@ class MainActivity : AppCompatActivity() {
         fragmentTrans.commit()
     }
 
-    override fun onBackPressed() {
-        navView = findViewById(R.id.bv_main)
 
-        if (supportFragmentManager.findFragmentById(R.id.fl_main) == HomeFragment()) {
-            super.onBackPressed()
-        } else {
-            moveToFragment(HomeFragment())
-            navView.selectedItemId = R.id.nav_home
+    override fun onBackPressed() {
+        when (supportFragmentManager.findFragmentById(R.id.fl_main)) {
+            !is HomeFragment -> goToHome()
+
+            else -> super.onBackPressed()
         }
+    }
+
+    private fun goToHome() {
+        navView = findViewById(R.id.bv_main)
+        moveToFragment(HomeFragment())
+        navView.selectedItemId = R.id.nav_home
     }
 }

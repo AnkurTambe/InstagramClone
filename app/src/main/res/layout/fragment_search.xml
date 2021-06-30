@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <EditText
         android:id="@+id/et_search_bar"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/bg_et"
-        android:drawableStart="@drawable/search"
+        android:drawableStart="@drawable/small_search"
         android:drawablePadding="25dp"
         android:hint="Search"
         android:inputType="phone"
@@ -22,9 +23,9 @@
         android:paddingBottom="10dp"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_search"
