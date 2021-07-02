@@ -63,7 +63,7 @@
             android:layout_height="110dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:src="@drawable/user" />
+            android:src="@drawable/profile_fill" />
 
         <TextView
             android:id="@+id/tv_change_pro_pic_ep"
@@ -127,35 +127,12 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tl_website_ep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tl_username_ep"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:hint="Website">
-
-            <EditText
-                android:id="@+id/et_website_ep"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="#00FFFFFF"
-                android:fontFamily="@font/proxim_nova"
-                android:inputType="text"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                tools:text="www.ankurtambe,com" />
-
-        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tl_bio_ep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tl_website_ep"
+            android:layout_below="@id/tl_username_ep"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"

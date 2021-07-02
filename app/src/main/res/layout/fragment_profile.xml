@@ -88,7 +88,7 @@
                         android:id="@+id/cv_pro_pic"
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:src="@drawable/user" />
+                        android:src="@drawable/profile_fill" />
 
                 </LinearLayout>
 
@@ -188,7 +188,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_name_pro"
+                    android:id="@+id/tv_fullname_pro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
@@ -207,14 +207,6 @@
                     android:textColor="@color/black"
                     tools:text="Hi there! I am using InstagramClone." />
 
-                <TextView
-                    android:id="@+id/tv_website_pro"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="14dp"
-                    android:fontFamily="@font/proxim_nova"
-                    android:textColor="@color/navy_blue"
-                    tools:text="www.ankurtambe.com" />
 
             </LinearLayout>
 

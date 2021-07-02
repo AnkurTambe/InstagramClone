@@ -6,10 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.ankurtambe.instagramclone.R
 import com.ankurtambe.instagramclone.activity.EditProfileActivity
+import com.ankurtambe.instagramclone.activity.LogInActivity
+import com.ankurtambe.instagramclone.activity.MainActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.dialog_menu.*
 import kotlinx.android.synthetic.main.dialog_menu.view.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
@@ -31,7 +35,14 @@ class ProfileFragment : Fragment() {
                 .inflate(R.layout.dialog_menu, menu_dialog_container)
 
             bottomSheetView.rl_log_out.setOnClickListener {
+                FirebaseAuth.getInstance().signOut()
 
+                Toast.makeText(container.context, "Logged Out!", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(container.context, LogInActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+                activity?.finish()
             }
 
             bottomSheetView.rl_delete_account.setOnClickListener {

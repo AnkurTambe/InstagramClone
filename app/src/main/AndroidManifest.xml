@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InstagramClone">
-        <activity android:name=".activity.EditProfileActivity"></activity>
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LogInActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

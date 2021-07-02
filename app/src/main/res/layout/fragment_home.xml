@@ -22,15 +22,23 @@
             android:layout_centerVertical="true"
             android:src="@drawable/add" />
 
-        <TextView
-            android:id="@+id/tv_insta_name_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/iv_insta_name_home"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/billabong"
-            android:text="Instagram"
-            android:textColor="@color/black"
-            android:textSize="35sp" />
+            android:src="@drawable/instagram"
+            app:tint="@color/black" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_insta_name_home"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:fontFamily="@font/billabong"-->
+        <!--            android:text="Instagram"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="35sp" />-->
 
         <ImageView
             android:id="@+id/iv_dm_home"
