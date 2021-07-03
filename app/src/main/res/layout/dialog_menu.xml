@@ -5,13 +5,13 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_menu_dialog">
 
-    <TextView
+    <ImageView
         android:id="@+id/grey_line_menu"
         android:layout_width="50dp"
         android:layout_height="5dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:background="@drawable/bg_tv1" />
+        android:background="@drawable/widg1" />
 
     <RelativeLayout
         android:id="@+id/rl_log_out"

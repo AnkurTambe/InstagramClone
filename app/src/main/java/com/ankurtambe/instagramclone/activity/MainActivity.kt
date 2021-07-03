@@ -20,80 +20,79 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
-        Picasso.get().load(R.drawable.search_fill).into(iv_search_main)
-        Picasso.get().load(R.drawable.reel_fill).into(iv_reel_main)
-        Picasso.get().load(R.drawable.heart_fill).into(iv_notifications_main)
-        Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
-
-        Picasso.get().load(R.drawable.home).into(iv_home_main)
-        Picasso.get().load(R.drawable.search).into(iv_search_main)
-        Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-        Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-        Picasso.get().load(R.drawable.profile).into(iv_profile_main)
+//        Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
+//        Picasso.get().load(R.drawable.search_fill).into(iv_search_main)
+//        Picasso.get().load(R.drawable.reel_fill).into(iv_reel_main)
+//        Picasso.get().load(R.drawable.heart_fill).into(iv_notifications_main)
+//        Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
+//
+//        Picasso.get().load(R.drawable.home).into(iv_home_main)
+//        Picasso.get().load(R.drawable.search).into(iv_search_main)
+//        Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//        Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//        Picasso.get().load(R.drawable.profile).into(iv_profile_main)
 
         var f: String? = intent.getStringExtra("frag")
 
-        iv_home_main.setOnClickListener {
-            Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
-            Picasso.get().load(R.drawable.search).into(iv_search_main)
-            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
-            moveToFragment(HomeFragment())
-        }
-
-        iv_search_main.setOnClickListener {
-            Picasso.get().load(R.drawable.search_fill).into(iv_search_main)
-            Picasso.get().load(R.drawable.home).into(iv_home_main)
-            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
-            moveToFragment(SearchFragment())
-        }
-
-        iv_reel_main.setOnClickListener {
-            Picasso.get().load(R.drawable.reel_fill).into(iv_reel_main)
-            Picasso.get().load(R.drawable.home).into(iv_home_main)
-            Picasso.get().load(R.drawable.search).into(iv_search_main)
-            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
-            moveToFragment(ReelFragment())
-        }
-
-        iv_notifications_main.setOnClickListener {
-            Picasso.get().load(R.drawable.heart_fill).into(iv_notifications_main)
-            Picasso.get().load(R.drawable.home).into(iv_home_main)
-            Picasso.get().load(R.drawable.search).into(iv_search_main)
-            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
-            moveToFragment(NotificationsFragment())
-        }
-
-        iv_profile_main.setOnClickListener {
-            Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
-            Picasso.get().load(R.drawable.home).into(iv_home_main)
-            Picasso.get().load(R.drawable.search).into(iv_search_main)
-            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-            moveToFragment(ProfileFragment())
-        }
-
-//        navView = findViewById(R.id.bv_main)
+//        iv_home_main.setOnClickListener {
+//            Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
+//            Picasso.get().load(R.drawable.search).into(iv_search_main)
+//            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
+//            moveToFragment(HomeFragment())
+//        }
 //
-//        navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+//        iv_search_main.setOnClickListener {
+//            Picasso.get().load(R.drawable.search_fill).into(iv_search_main)
+//            Picasso.get().load(R.drawable.home).into(iv_home_main)
+//            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
+//            moveToFragment(SearchFragment())
+//        }
+//
+//        iv_reel_main.setOnClickListener {
+//            Picasso.get().load(R.drawable.reel_fill).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.home).into(iv_home_main)
+//            Picasso.get().load(R.drawable.search).into(iv_search_main)
+//            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
+//            moveToFragment(ReelFragment())
+//        }
+//
+//        iv_notifications_main.setOnClickListener {
+//            Picasso.get().load(R.drawable.heart_fill).into(iv_notifications_main)
+//            Picasso.get().load(R.drawable.home).into(iv_home_main)
+//            Picasso.get().load(R.drawable.search).into(iv_search_main)
+//            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.profile).into(iv_profile_main)
+//            moveToFragment(NotificationsFragment())
+//        }
+//
+//        iv_profile_main.setOnClickListener {
+//            Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
+//            Picasso.get().load(R.drawable.home).into(iv_home_main)
+//            Picasso.get().load(R.drawable.search).into(iv_search_main)
+//            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//            moveToFragment(ProfileFragment())
+//        }
+
+        navView = findViewById(R.id.btm_nav_layout)
+
+        navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
         if (f == "e") {
-            Picasso.get().load(R.drawable.home).into(iv_home_main)
-            Picasso.get().load(R.drawable.search).into(iv_search_main)
-            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-            Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
+//            Picasso.get().load(R.drawable.home).into(iv_home_main)
+//            Picasso.get().load(R.drawable.search).into(iv_search_main)
+//            Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//            Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//            Picasso.get().load(R.drawable.profile_fill).into(iv_profile_main)
             moveToFragment(ProfileFragment())
-//            navView.selectedItemId = R.id.nav_profile
+            navView.selectedItemId = R.id.nav_profile
         } else {
-            gotoHome()
-//            navView.selectedItemId = R.id.nav_home
+            goToHome()
         }
     }
 
@@ -131,35 +130,35 @@ class MainActivity : AppCompatActivity() {
         fragmentTrans.commit()
     }
 
-    override fun onBackPressed() {
-        when (supportFragmentManager.findFragmentById(R.id.fl_main)) {
-            !is HomeFragment -> gotoHome()
-
-            else -> super.onBackPressed()
-        }
-    }
-
-    private fun gotoHome() {
-        Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
-        Picasso.get().load(R.drawable.search).into(iv_search_main)
-        Picasso.get().load(R.drawable.reel).into(iv_reel_main)
-        Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
-        Picasso.get().load(R.drawable.profile).into(iv_profile_main)
-        moveToFragment(HomeFragment())
-    }
-
-
 //    override fun onBackPressed() {
 //        when (supportFragmentManager.findFragmentById(R.id.fl_main)) {
-//            !is HomeFragment -> goToHome()
+//            !is HomeFragment -> gotoHome()
 //
 //            else -> super.onBackPressed()
 //        }
 //    }
 //
 //    private fun goToHome() {
-//        navView = findViewById(R.id.bv_main)
+//        Picasso.get().load(R.drawable.home_fill).into(iv_home_main)
+//        Picasso.get().load(R.drawable.search).into(iv_search_main)
+//        Picasso.get().load(R.drawable.reel).into(iv_reel_main)
+//        Picasso.get().load(R.drawable.heart).into(iv_notifications_main)
+//        Picasso.get().load(R.drawable.profile).into(iv_profile_main)
 //        moveToFragment(HomeFragment())
-//        navView.selectedItemId = R.id.nav_home
 //    }
+
+
+    override fun onBackPressed() {
+        when (supportFragmentManager.findFragmentById(R.id.fl_main)) {
+            !is HomeFragment -> goToHome()
+
+            else -> super.onBackPressed()
+        }
+    }
+
+    private fun goToHome() {
+        navView = findViewById(R.id.btm_nav_layout)
+        moveToFragment(HomeFragment())
+        navView.selectedItemId = R.id.nav_home
+    }
 }

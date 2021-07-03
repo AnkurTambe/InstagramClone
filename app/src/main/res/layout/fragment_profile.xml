@@ -111,10 +111,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/proxim_nova"
+                            android:text="0"
                             android:textColor="@color/black"
                             android:textSize="22dp"
-                            android:textStyle="bold"
-                            tools:text="6" />
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -137,10 +137,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/proxim_nova"
+                            android:text="0"
                             android:textColor="@color/black"
                             android:textSize="22dp"
-                            android:textStyle="bold"
-                            tools:text="332" />
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -163,10 +163,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/proxim_nova"
+                            android:text="0"
                             android:textColor="@color/black"
                             android:textSize="22dp"
-                            android:textStyle="bold"
-                            tools:text="244" />
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -211,17 +211,17 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_edit_pro"
+                android:id="@+id/btn_profile"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/bg_btn"
                 android:elevation="0dp"
                 android:fontFamily="@font/proxim_nova"
-                android:text="Edit Profile"
                 android:textAllCaps="false"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="Edit Profile" />
 
             <LinearLayout
                 android:layout_width="match_parent"

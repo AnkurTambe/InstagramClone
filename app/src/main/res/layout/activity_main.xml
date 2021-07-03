@@ -8,70 +8,70 @@
         android:id="@+id/fl_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/ll_main_btm_bar"
+        app:layout_constraintBottom_toTopOf="@+id/btm_nav_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/ll_main_btm_bar"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/iv_home_main"
-            android:layout_width="0dp"
-            android:layout_height="22dp"
-            android:layout_weight="1"
-            android:src="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/iv_search_main"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_weight="1"
-            android:src="@drawable/search" />
-
-        <ImageView
-            android:id="@+id/iv_reel_main"
-            android:layout_width="0dp"
-            android:layout_height="25dp"
-            android:layout_weight="1"
-            android:src="@drawable/reel" />
-
-        <ImageView
-            android:id="@+id/iv_notifications_main"
-            android:layout_width="0dp"
-            android:layout_height="22dp"
-            android:layout_weight="1"
-            android:src="@drawable/heart" />
-
-        <ImageView
-            android:id="@+id/iv_profile_main"
-            android:layout_width="0dp"
-            android:layout_height="22dp"
-            android:layout_weight="1"
-            android:src="@drawable/profile" />
-
-
-    </LinearLayout>
-
-    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-    <!--        android:id="@+id/bv_main"-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/ll_main_btm_bar"-->
     <!--        android:layout_width="0dp"-->
     <!--        android:layout_height="45dp"-->
-    <!--        android:layout_marginStart="0dp"-->
-    <!--        android:layout_marginEnd="0dp"-->
-    <!--        android:background="@color/white"-->
-    <!--        app:labelVisibilityMode="unlabeled"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="horizontal"-->
     <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:menu="@menu/bottom_nav_menu" />-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_home_main"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="22dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/home" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_search_main"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/search" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_reel_main"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/reel" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_notifications_main"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="22dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/heart" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_profile_main"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="22dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:src="@drawable/profile" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_nav_layout"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
